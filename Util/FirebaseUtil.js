@@ -7,7 +7,7 @@ const FirebaseAuth=()=>{
           return auth().signInWithEmailAndPassword(text, password);
         
       },
-    signUp=(text:String,password:String)=>{
+    signUp=(text,password)=>{
     return auth().createUserWithEmailAndPassword(text,password);
    };
     signout=()=>{
